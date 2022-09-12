@@ -1,0 +1,9 @@
+Upload capacity
+Download capacity
+Upload flows
+Download flows
+Responsiveness
+RPM (roundtrips completed per minute)
+Base RTT (Round Trip Time)
+
+
