@@ -1,3 +1,4 @@
+#!/bin/bash
 ### Created by Brian Greenberg
 ### bjg@acm.org / briangreenberg.net
 ### ⓒ 2022 Brian Greenberg All Rights Reserved.
