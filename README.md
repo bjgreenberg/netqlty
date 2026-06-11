@@ -37,9 +37,9 @@ A scratch file `netqlty.tmp` is created and removed on each cycle.
 
 ## CI
 
-Every pull request, and every push to `master` (this repo's default branch), runs the `test` job of the CI
+Every pull request, and every push to `main` (this repo's default branch), runs the `test` job of the CI
 workflow ([.github/workflows/ci.yml](.github/workflows/ci.yml)): `shellcheck -S error`
-on all shell scripts. The `test` check is required on `master` — PRs cannot
+on all shell scripts. The `test` check is required on `main` — PRs cannot
 merge until it passes.
 
 ## Known limitations
