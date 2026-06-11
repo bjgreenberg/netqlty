@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint shell scripts (error severity)
+        run: |
+          set -euo pipefail
+          status=0
+          while IFS= read -r -d '' f; do
+            echo "== shellcheck: $f"
+            shellcheck -S error "$f" || status=1
+          done < <(find . -name .git -prune -o -type f -name '*.sh' -print0)
+          exit "$status"
