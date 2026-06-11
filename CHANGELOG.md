@@ -7,7 +7,7 @@ Format: [Keep a Changelog](https://keepachangelog.com), date-based sections.
 
 ### Added
 
-- `ci`: GitHub Actions CI workflow (`test` job) — `shellcheck -S error` on all shell scripts, every PR and push to `main`.
+- `ci`: GitHub Actions CI workflow (`test` job) — `shellcheck -S error` on all shell scripts, every PR and push to `master` (this repo's default branch).
 - `docs`: README (purpose, usage, output format, CI, known limitations).
 
 ### Fixed
